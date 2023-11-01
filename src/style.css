@@ -103,6 +103,9 @@ h2 {
   }
 }
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: #f7f7f7;
 }
 main section {
@@ -127,7 +130,7 @@ main section article p {
 }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   padding-inline: 2rem;
   gap: 1rem;
@@ -164,10 +167,6 @@ main section article p {
     text-align: center;
   }
 }
-.band {
-  margin-block: 2rem;
-}
-
 footer {
   height: 60vh;
   flex-direction: column;

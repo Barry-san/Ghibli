@@ -21,7 +21,6 @@ p {
 .band {
   display: flex;
   justify-content: space-between;
-  // gap: 2rem;
 }
 
 h1 {
@@ -64,6 +63,9 @@ h2 {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: #f7f7f7;
   section {
     display: grid;
@@ -89,7 +91,7 @@ main {
 }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   padding-inline: 2rem;
   gap: 1rem;
@@ -128,10 +130,6 @@ main {
     font-size: 1rem;
     text-align: center;
   }
-}
-
-.band {
-  margin-block: 2rem;
 }
 
 footer {
