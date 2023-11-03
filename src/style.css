@@ -248,7 +248,6 @@ main section article p {
 .scenes img {
   width: min(50rem, 100%);
   object-fit: cover;
-  background-color: red;
   object-position: center;
   margin-inline: auto;
 }
