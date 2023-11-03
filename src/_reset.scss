@@ -3,15 +3,22 @@
 *::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 
   background-color: #f7f7f7;
 }
+
 img,
 picture,
 video,
@@ -20,12 +27,14 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p,
 h1,
 h2,
