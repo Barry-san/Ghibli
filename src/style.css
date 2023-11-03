@@ -163,13 +163,11 @@ h2 {
   width: 100%;
   flex-direction: column;
   gap: 1rem;
-  padding-inline: 1rem;
   background-image: url("/ghibli-giphy.gif");
   background-size: contain;
   background-position: 10% center;
   background-repeat: no-repeat;
 }
-
 .hero .hero-bg {
   width: 100%;
   min-height: 90vh;
@@ -180,7 +178,6 @@ h2 {
   align-items: center;
   gap: 1rem;
 }
-
 .hero p {
   text-align: center;
   width: 50%;
@@ -191,19 +188,23 @@ h2 {
     background-position: center;
     background-size: cover;
   }
-
+  .hero .hero-bg {
+    backdrop-filter: brightness(65%);
+    color: #ffffff;
+  }
+  .hero .ghibli-logo {
+    filter: invert(100%);
+  }
   .hero p {
     width: 100%;
   }
 }
-
 main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   background-color: #f7f7f7;
 }
-
 main section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -211,12 +212,10 @@ main section {
   justify-content: space-around;
   min-height: 100vh;
 }
-
 main section article {
   padding-inline: 4rem;
   text-align: left;
 }
-
 main section article p {
   font-size: 15px;
   color: #2e2e2e;
@@ -235,7 +234,6 @@ main section article p {
   align-items: center;
   font-size: 15px;
 }
-
 .about img {
   object-fit: contain;
 }
@@ -247,7 +245,6 @@ main section article p {
   padding-inline: 1rem;
   gap: 1rem;
 }
-
 .scenes img {
   width: min(50rem, 100%);
   object-fit: cover;
@@ -257,7 +254,6 @@ main section article p {
 }
 
 @media (max-width: 740px) {
-
   main .about,
   main section {
     display: flex;
@@ -266,13 +262,11 @@ main section article p {
     align-items: center;
     justify-content: center;
   }
-
-  .band>span {
+  .band > span {
     font-size: 1rem;
     text-align: center;
   }
 }
-
 footer {
   height: 60vh;
   flex-direction: column;
