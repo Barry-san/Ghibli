@@ -82,11 +82,20 @@ h2 {
   width: 100%;
   flex-direction: column;
   gap: 1rem;
-  padding-inline: 1rem;
   background-image: url("/public/ghibli-giphy.gif");
   background-size: contain;
   background-position: 10% center;
   background-repeat: no-repeat;
+}
+.hero .hero-bg {
+  width: 100%;
+  min-height: 90vh;
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .hero p {
   text-align: center;
@@ -97,6 +106,14 @@ h2 {
   .hero {
     background-position: center;
     background-size: cover;
+  }
+  .hero .hero-bg {
+    -webkit-backdrop-filter: brightness(65%);
+            backdrop-filter: brightness(65%);
+    color: #ffffff;
+  }
+  .hero .ghibli-logo {
+    filter: invert(100%);
   }
   .hero p {
     width: 100%;
@@ -126,7 +143,8 @@ main section article p {
 
 .img_container img {
   margin: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .about {
@@ -138,7 +156,8 @@ main section article p {
   font-size: 15px;
 }
 .about img {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .scenes {
@@ -149,8 +168,10 @@ main section article p {
   gap: 1rem;
 }
 .scenes img {
-  object-fit: none;
-  object-position: center;
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media (max-width: 740px) {
@@ -177,8 +198,10 @@ footer {
 
 footer img {
   max-width: 100%;
-  object-fit: scale-down;
-  object-position: bottom;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 ul {
@@ -195,17 +218,16 @@ a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #2e2e2e;
-  transition: color ease-out 0.3s;
+  transition: all linear 0.5s;
+  font-weight: 500;
 }
 
 a:hover {
-  color: blue;
+  color: #1614b5;
 }
 
 @media screen and (max-width: 800px) {
   footer {
     width: 100vw;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
